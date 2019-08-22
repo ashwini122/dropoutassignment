@@ -11,5 +11,6 @@ with open('data.json') as f:
         df.loc[i] = y
         i = i +1
     df
-    new_df = df.replace("NR", np.NaN)
+    new_df = df.replace("NR", 0)
     new_df
+    state_grp = new_df.groupby('State_UT')
