@@ -3,8 +3,11 @@ with open('data.json') as f:
 
     cnames = ['State_UT', ' year', 'Primary_Boys', 'Primary_Girls', 'Primary_Total', 'Upper Primary_Boys','Upper Primary_Girls','Upper Primary_Total','Secondary _Boys','Secondary _Girls','Secondary _Total','HrSecondary_Boys','HrSecondary_Girls','HrSecondary_Total']
     df = pd.DataFrame(columns= cnames)
+    i = 0
 
-    for dx in content['data']:
-        #df = df.append(pd.DataFrame([dx], columns= cnames))
-
-    print(df.loc[ :])
+    for x in content['data']:
+        y = []
+        y =x
+        df.loc[i] = y
+        i = i +1
+    df
