@@ -1,0 +1,37 @@
+State_UT       	      HrSecondary_Total
+	
+All India	       1.540000
+Madhya Pradesh	        1.550000
+Tamil Nadu	        1.870000
+Uttar Pradesh	        2.100000
+Uttarakhand	        2.300000
+Chhattisgarh	        2.760000
+Maharashtra	        2.790000
+Jharkhand	        3.410000
+Kerala	                3.435000
+Tamil Nadu	        3.925000
+Haryana	                3.965000
+Lakshadweep	        4.176667
+Gujarat	                5.110000
+Manipur	                5.565000
+Assam	                5.965000
+Andhra Pradesh	        6.070000
+Punjab	                6.640000
+Mizoram	                6.910000
+Puducherry	        6.970000
+Telangana	        7.100000
+Himachal Pradesh        7.833333
+West Bengal	        8.046667
+Dadra & Nagar Haveli	8.453333
+Karnataka	        8.645000
+Tripura	                8.970000
+Jammu & Kashmir	        10.316667
+Sikkim	                10.923333
+Arunachal Pradesh	11.765000
+Chandigarh	        11.826667
+Goa	                12.843333
+Nagaland	        13.150000
+A & N Islands	        15.646667
+Delhi	                16.013333
+Arunachal Pradesh	17.070000
+Daman & Diu	        17.200000 
