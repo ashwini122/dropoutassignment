@@ -26,7 +26,7 @@ Ans) Here if we go through the question and data given are of drop_rates given s
 
    Result is in the solution1 file.
    
- 3) How can we find average drop_out rate for secondary school boys.
+ 3. How can we find average drop_out rate for secondary school boys.
  
 ans)  Similar to 1st Question, removed all the "NR" Data from Secondary_Boys.
        
