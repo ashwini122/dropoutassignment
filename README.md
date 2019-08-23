@@ -25,5 +25,17 @@ Ans) Here if we go through the question and data given are of drop_rates given s
        mean_nn_df.sort_values('HrSecondary_Total', ascending= True)
 
    Result is in the solution1 file.
+   
+ 3) How can we find average drop_out rate for secondary school boys.
+ 
+ans)  Similar to 1st Question, removed all the "NR" Data from Secondary_Boys.
+       
+       notnull_df = new_df[pd.notnull(new_df['Secondary _Boys'])]
+       
+   Grouped By state and found the mean of drop out rates and sorted it in descending order.
+       
+        mean_nn_df1 = notnull_df.groupby('State_UT')[['Secondary _Boys']].mean()
+	mean_nn_df1.sort_values('Secondary _Boys', ascending= False)
+   This will give the lit of data i.e. states along with the highest average dropout rates of Secondary_Boys
 	
        
