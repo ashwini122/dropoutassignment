@@ -91,7 +91,7 @@ ans)  Similar to 1st Question, removed all the "NR" Data from Secondary_Boys.
    Now considering 40% attendence is minimum requirement to complete 12th standard we can select records whose attendance sum 
     is less than 100.
     
-   select students whose sum(attended) < 100
+   select students whose df('attended).sum() < 100
    ---------------------------------------------------------------------------
    
    After this we can do a count of studentID by doing a group by on state an year on the above result which we received as count
