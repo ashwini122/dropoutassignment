@@ -37,5 +37,43 @@ ans)  Similar to 1st Question, removed all the "NR" Data from Secondary_Boys.
         mean_nn_df1 = notnull_df.groupby('State_UT')[['Secondary _Boys']].mean()
 	mean_nn_df1.sort_values('Secondary _Boys', ascending= False)
    This will give the lit of data i.e. states along with the highest average dropout rates of Secondary_Boys
+   
+   
+   4. Imagine we get individual student's data with their activity of attendance of every school in India, Please suggest some solution       (In words, Not code) to find the same answers to above questions. Please be as detailed as possible. 
+      One sample record for above question(Q.4): DATETIME FORMAT : yy-MM-dd HH:mm:ss,SSS ZZZZ 
+         
+	 {"state":"Gujarat","schoolId":"10f658d42","standard":"11","studentId":"37e6893a7978c","Attended":"1","timestamp":"11-02-11 
+         16:47:35,985 +0000"}   
+	
+  4.1) So as per the first question "Find state with the highest percent of students finishing their schooling.?"
+   
+   Firstly, stundents who have attended Standard 12 are considered as students who have finished schooling.
+   
+   Assuming we have dataframe with whole data per student for each day.
+   
+   Count the sum of records where standard "12" and attended is "1" and perform a group by operation on student id, state, year 
+   -----------------------------------------------------------------------------------------------------------------
+   This will help me to fetch students attendence total for a specific year and for specific state.
+   
+   Now considering 40% attendence is minimum requirement to complete 12th standard we can filter out records whose attendance sum 
+    is less than 100.
+    
+  remove students whose sum(attended) is less 100
+  ------------------------------------------------------
+  
+  After this we can do a count(studentID) by doing a group by on state an year on the above result which we received
+  ---------------------------------------------------------------------------------------------------------------
+  
+  this will return the number students who attended 12th for that particular year for that particular state
+  
+  Again to do a goup by on state and do a sum(count(student(id)) for all the years and store it as total
+  -------------------------------------------------------------------------------------------
+  
+ This will give the sum total sum of students for all years in one particular state.
+  Now to find percentage we can apply the below :
+  df['state_percent'] = df['total']/df1['total].sum()
+  
+  This will percentage for each state and we can sort this in descending order to get top states with highest schooling
+   
 	
        
