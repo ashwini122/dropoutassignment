@@ -63,12 +63,12 @@ ans)  Similar to 1st Question, removed all the "NR" Data from Secondary_Boys.
   remove students whose sum(attended) is less 100
   ------------------------------------------------------
   
-  After this we can do a count(studentID) by doing a group by on state an year on the above result which we received as count
+  After this we can do a count of studentID by doing a group by on state an year on the above result which we received as count
   ---------------------------------------------------------------------------------------------------------------
   
   this will return the number students who attended 12th for that particular year for that particular state
   
-  Again to do a goup by on state and do a sum(count) for all the years and store it as total
+  Again to do a goup by on state and do a sum on count column, df('count').sum() for all the years and store it as total
   -------------------------------------------------------------------------------------------
   
  This will give the sum total sum of students for all years in one particular state.
@@ -94,12 +94,12 @@ ans)  Similar to 1st Question, removed all the "NR" Data from Secondary_Boys.
    select students whose sum(attended) < 100
    ---------------------------------------------------------------------------
    
-   After this we can do a count(studentID) by doing a group by on state an year on the above result which we received as count
+   After this we can do a count of studentID by doing a group by on state an year on the above result which we received as count
   ---------------------------------------------------------------------------------------------------------------
   
    this will return the number students who have not attended 10th for that particular year for that particular state
    
-   Do  goup by on state and do a sum(count) for all the years and store it as total
+   Do  goup by on state and do a count column, df('count').sum()  for all the years and store it as total
   -------------------------------------------------------------------------------------------
   
    This will give the sum total sum of students for all years in one particular state who have not attended 10th 
