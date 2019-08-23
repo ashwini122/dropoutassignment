@@ -11,6 +11,9 @@ with open('data.json') as f:
         df.loc[i] = y
         i = i +1
     df
-    new_df = df.replace("NR", 0)
+    new_df = df.replace({"NR":np.nan , "Uppe_r_Primary" : None})
     new_df
-    state_grp = new_df.groupby('State_UT')
+    notnull_df = new_df[pd.notnull(new_df['HrSecondary_Total'])]
+    notnull_df
+    mean_nn_df = notnull_df.groupby('State_UT')[['HrSecondary_Total']].mean()
+    mean_nn_df.sort_values('HrSecondary_Total', ascending= True)
