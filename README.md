@@ -1,5 +1,5 @@
 # dropoutassignment
-Based on the Json Data received, the Meta Data and the actuall data we in two different feilds. 
+Based on the Json Data received, the Meta Data and the actual data we in two different feilds. 
 
 a)Created a empty dataframes with all the Fields mentioned in the Meta data which seems like this below.
 
